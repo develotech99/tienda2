@@ -22,5 +22,10 @@ class DatabaseSeeder extends Seeder
             'photo' => null,
         ]);
 
+        $this->call([
+            CajaSeeder::class,
+            ProductoTipoSeeder::class,
+            ProductoSeeder::class,
+        ]);
     }
 }
